@@ -1,6 +1,6 @@
 # Supply Chain Risk Monitor
 
-An ML-powered Streamlit dashboard for analyzing global supply chain disruptions, predicting risk severity, and tracking key market indicators across 2000–2025.
+Supply Chain Risk Monitor is a machine learning dashboard that predicts the impact of global supply chain disruptions. Three Random Forest models — trained on 58 historical events spanning 2001 to 2025 — forecast disruption severity (medium / high / extreme), expected freight rate shock, and estimated recovery time given a user-defined scenario. Features include disruption type, affected region, duration, and structural flags such as strait closures and port shutdowns. The dashboard layers these predictions onto five years of weekly port congestion data, 25 years of shipping rate history, and annual industry vulnerability scores across ten sectors, giving analysts a single view of both real-time market signals and forward-looking risk estimates.
 
 ## Features
 
