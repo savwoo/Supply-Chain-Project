@@ -3,14 +3,9 @@
 Usage:
     python train.py
 """
-import sys
-from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).parent))
-
-from src.data_loader import load_disruption_events
-from src.features import build_disruption_features, SEVERITY_LABELS
-from src.model import (
+from risk_engine.data_loader import load_disruption_events
+from risk_engine.features import build_disruption_features, SEVERITY_LABELS
+from risk_engine.model import (
     train_severity_classifier,
     train_freight_regressor,
     train_recovery_regressor,

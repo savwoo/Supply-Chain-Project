@@ -1,5 +1,4 @@
 """Supply Chain Risk Monitor — Streamlit dashboard."""
-import sys
 from pathlib import Path
 
 import pandas as pd
@@ -7,16 +6,14 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
-sys.path.insert(0, str(Path(__file__).parent))
-
-from src.data_loader import (
+from risk_engine.data_loader import (
     load_disruption_events,
     load_industry_exposure,
     load_port_congestion,
     load_shipping_rates,
 )
-from src.features import SEVERITY_LABELS, build_disruption_features, encode_prediction_input
-from src.model import load_models, save_models, train_severity_classifier, train_freight_regressor, train_recovery_regressor
+from risk_engine.features import SEVERITY_LABELS, build_disruption_features, encode_prediction_input
+from risk_engine.model import load_models, save_models, train_severity_classifier, train_freight_regressor, train_recovery_regressor
 
 _MODEL_DIR = Path(__file__).parent / "models"
 
