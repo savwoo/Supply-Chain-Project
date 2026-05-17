@@ -452,7 +452,7 @@ elif page == "Shipping Markets":
             return fig
         for _, ev in extreme_events.iterrows():
             fig.add_vline(
-                x=ev["date"],
+                x=ev["date"].isoformat(),
                 line_dash="dot",
                 line_color="rgba(211,47,47,0.35)",
                 annotation_text=ev["event_name"][:28],
