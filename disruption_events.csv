@@ -1,0 +1,59 @@
+date,year,event_name,disruption_type,region_affected,duration_days,bdi_shock_pct,freight_rate_shock_pct,severity,gdp_impact_pct,trade_volume_impact_pct,recovery_months,is_pandemic,is_geopolitical,is_natural,is_financial,straits_affected,port_closure
+2001-09-11,2001,9/11 attacks — air cargo freeze,geopolitical,Global,30,-15,-20,high,-0.3,-5.5,1,0,1,0,0,0,0
+2002-10-01,2002,US West Coast port lockout (ILWU),labor,NorthAmerica,11,-5,-25,high,-1.21,1.4,1,0,0,0,0,0,1
+2003-04-01,2003,SARS outbreak — Asia trade disruption,pandemic,Asia,90,-8,-15,medium,-0.05,-1.6,2,1,0,0,0,0,0
+2004-01-01,2004,China manufacturing surge — capacity crunch,demand,Asia,180,25,30,medium,-0.95,9.1,5,0,0,0,0,0,0
+2005-08-29,2005,Hurricane Katrina — Gulf of Mexico ports,natural,NorthAmerica,45,-12,-18,high,-0.36,-7.0,1,0,0,1,0,0,1
+2008-09-15,2008,Lehman collapse — global trade freeze,financial,Global,180,-60,-45,extreme,-0.45,-22.0,5,0,0,0,1,0,0
+2010-04-15,2010,Eyjafjallajökull eruption — air cargo halt,natural,Europe,7,-3,-40,high,-0.37,-0.6,1,0,0,1,0,0,0
+2011-03-11,2011,Tohoku earthquake/tsunami — Japan supply shock,natural,Asia,120,-15,-20,extreme,-0.75,-12.1,3,0,0,1,0,0,0
+2011-08-01,2011,Thailand floods — HDD supply collapse,natural,Asia,90,-8,-12,high,-0.57,-5.5,1,0,0,1,0,0,0
+2012-06-01,2012,Euro debt crisis — Mediterranean trade drop,financial,Europe,180,-10,-8,medium,-0.67,-4.2,6,0,0,0,1,0,0
+2013-01-01,2013,Bangladesh Rana Plaza — factory safety crisis,social,Asia,60,-3,-5,medium,-1.19,-4.7,2,0,0,0,0,0,0
+2014-01-01,2014,China labor costs spike — reshoring wave,economic,Asia,365,-5,5,medium,-0.26,-2.0,8,0,0,0,1,0,0
+2015-06-01,2015,US West Coast port slowdown (ILWU v PMA),labor,NorthAmerica,120,-8,-20,high,-0.5,-4.0,3,0,0,0,0,0,1
+2015-08-11,2015,China yuan devaluation — trade repricing,financial,Asia,30,-5,-8,medium,-0.94,-3.7,1,0,0,0,1,0,0
+2016-01-01,2016,Hanjin Shipping bankruptcy — $14B cargo stranded,financial,Global,90,-8,-25,high,-0.6,-1.6,2,0,0,0,1,0,0
+2016-06-23,2016,Brexit vote — UK supply chain uncertainty,political,Europe,365,-5,-3,medium,-0.59,-3.3,18,0,1,0,0,0,0
+2017-05-12,2017,WannaCry ransomware — Maersk IT shutdown,cyber,Global,14,-3,-15,high,-0.39,-2.8,1,0,0,0,0,0,0
+2018-03-22,2018,Trump Section 301 tariffs on China ($50B),tariff,Global,365,-5,8,high,0.12,-7.7,13,0,1,0,0,0,0
+2018-07-06,2018,US-China trade war escalation ($250B),tariff,Global,730,-8,12,extreme,-0.04,-4.7,25,0,1,0,0,0,0
+2019-05-01,2019,US-China tariffs peak — decoupling begins,tariff,Global,365,-5,10,high,-0.05,-4.5,15,0,1,0,0,0,0
+2019-09-14,2019,Saudi Aramco Abqaiq attack,geopolitical,MiddleEast,14,-2,-3,medium,-0.41,-1.1,1,0,1,0,0,0,0
+2020-01-23,2020,Wuhan lockdown — COVID manufacturing halt,pandemic,Asia,60,-20,-15,extreme,-0.29,-3.4,2,1,0,0,0,0,0
+2020-03-11,2020,COVID-19 pandemic declared — global shutdown,pandemic,Global,180,-35,-30,extreme,-0.26,-13.6,10,1,0,0,0,0,0
+2020-04-01,2020,PPE supply crisis — medical supply squeeze,pandemic,Global,90,-5,200,extreme,-0.64,-5.5,3,1,0,0,0,0,0
+2020-09-01,2020,Container equipment shortage begins,logistics,Global,365,-5,80,extreme,-0.0,-7.1,12,0,0,0,0,0,0
+2021-01-01,2021,Post-COVID demand surge — port congestion,demand,Global,365,40,150,extreme,-0.25,15.0,13,0,0,0,0,0,1
+2021-03-23,2021,Ever Given blocks Suez Canal (6 days),natural,Global,6,-5,15,high,-0.74,-4.2,1,0,0,1,0,1,0
+2021-06-01,2021,Yantian port COVID closure — China lockdown,pandemic,Asia,30,-5,20,high,0.02,-1.3,1,1,0,0,0,0,1
+2021-07-01,2021,Global semiconductor shortage peak,demand,Global,365,-3,5,extreme,-0.16,-3.3,22,0,0,0,0,0,0
+2021-09-01,2021,Energy crisis — China factory shutdowns,energy,Asia,60,-8,-5,high,-0.33,-1.6,3,0,0,0,0,0,0
+2021-10-01,2021,LA/LB port gridlock — 100+ ships anchored,logistics,NorthAmerica,90,-5,25,high,0.1,-1.9,2,0,0,0,0,0,1
+2021-11-01,2021,"FBX container rate peaks ($11,000+/40ft)",logistics,Global,30,-3,200,extreme,0.19,-1.1,1,0,0,0,0,0,0
+2022-02-24,2022,Russia invades Ukraine — commodity shock,geopolitical,Europe,365,-8,20,extreme,0.39,-5.1,7,0,1,0,0,0,0
+2022-03-01,2022,Western sanctions on Russia,geopolitical,Europe,365,-5,15,high,0.1,-3.5,13,0,1,0,0,0,0
+2022-04-01,2022,Shanghai COVID lockdown (2 months),pandemic,Asia,60,-10,15,extreme,0.35,-6.7,1,1,0,0,0,0,0
+2022-06-01,2022,Container rates begin rapid decline,demand,Global,180,-5,-60,high,-0.05,-0.6,5,0,0,0,0,0,0
+2022-08-01,2022,Inflation → consumer demand collapse,economic,Global,180,-15,-40,high,0.22,-6.2,6,0,0,0,1,0,0
+2022-09-01,2022,CHIPS Act signed — semiconductor reshoring,policy,NorthAmerica,1825,-2,-2,medium,-0.01,1.2,36,0,1,0,0,0,0
+2023-01-08,2023,China reopens — COVID zero policy ends,policy,Asia,90,5,5,medium,-0.47,4.5,3,0,1,0,0,0,0
+2023-03-01,2023,US banking stress (SVB) — trade finance,financial,NorthAmerica,30,-3,-5,medium,-0.72,-0.8,1,0,0,0,1,0,0
+2023-05-01,2023,Nearshoring accelerates — Mexico boom,economic,NorthAmerica,730,-3,-2,medium,0.06,-0.4,19,0,0,0,1,0,0
+2023-06-01,2023,Wagner mutiny — Russian supply uncertainty,geopolitical,Europe,7,-2,-3,medium,-0.8,-0.9,1,0,1,0,0,0,0
+2023-10-07,2023,Israel-Hamas war — Red Sea rerouting begins,geopolitical,MiddleEast,365,-2,15,high,-0.41,-1.3,10,0,1,0,0,1,0
+2023-11-01,2023,Panama Canal drought — capacity restrictions,natural,LatinAmerica,180,-5,10,high,0.02,-3.5,2,0,0,1,0,1,0
+2023-12-18,2023,Houthi attacks escalate — Red Sea closure,geopolitical,MiddleEast,365,-3,25,extreme,-0.71,-1.2,10,0,1,0,0,1,1
+2024-01-15,2024,Maersk/CMA CGM suspend Red Sea sailings,geopolitical,MiddleEast,180,-3,20,high,-0.57,2.7,7,0,1,0,0,1,0
+2024-02-01,2024,Cape of Good Hope rerouting adds 10-14 days,geopolitical,Global,365,-2,15,high,-0.22,-0.3,11,0,1,0,0,0,0
+2024-03-26,2024,Baltimore Francis Scott Key Bridge collapse,natural,NorthAmerica,90,-5,-15,high,-0.88,0.1,3,0,0,1,0,0,0
+2024-04-01,2024,Trump tariff threats — 60% China tariffs signaled,tariff,Global,365,-5,10,high,-0.79,-1.5,13,0,1,0,0,0,0
+2024-06-01,2024,Container rates spike — Red Sea + demand,logistics,Global,180,-3,60,high,-0.3,3.0,10,0,0,0,0,1,0
+2024-07-19,2024,CrowdStrike IT outage — global logistics halt,cyber,Global,1,-2,-10,medium,-0.61,-1.2,1,0,0,0,0,0,0
+2024-09-01,2024,US East Coast port strike (ILA),labor,NorthAmerica,3,-3,-20,high,-0.68,-3.0,1,0,0,0,0,0,1
+2024-10-01,2024,Semiconductor export controls tighten (ASML),policy,Global,730,-2,-2,medium,0.09,2.3,30,0,1,0,0,0,1
+2024-11-01,2024,Trump election — tariff uncertainty spikes,political,Global,365,-5,8,high,-0.92,-5.7,16,0,1,0,0,0,0
+2025-01-20,2025,Trump 25% tariffs on Canada/Mexico announced,tariff,NorthAmerica,90,-3,15,high,0.29,-0.1,2,0,1,0,0,0,0
+2025-02-01,2025,US-China trade war round 2 begins (10%→145%),tariff,Global,365,-5,20,extreme,0.21,-0.5,17,0,1,0,0,0,0
+2025-03-01,2025,EU retaliatory tariffs on US goods,tariff,Europe,365,-3,8,high,-0.76,-0.5,20,0,1,0,0,0,0
+2025-04-01,2025,Global supply chain realignment — peak uncertainty,geopolitical,Global,365,-5,12,extreme,-0.04,-0.1,12,0,1,0,0,0,0
