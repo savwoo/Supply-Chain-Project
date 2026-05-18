@@ -442,24 +442,6 @@ elif page == "Industry Vulnerability":
 elif page == "Shipping Markets":
     st.title("📈 Shipping Market Indicators (2000–2024)")
     rates = get_rates()
-    events = get_events()
-
-    show_events = st.checkbox("Overlay extreme disruption events", value=True)
-    extreme_events = events[events["severity"] == "extreme"]
-
-    def add_event_lines(fig: go.Figure) -> go.Figure:
-        if not show_events:
-            return fig
-        for _, ev in extreme_events.iterrows():
-            fig.add_vline(
-                x=ev["date"].isoformat(),
-                line_dash="dot",
-                line_color="rgba(211,47,47,0.35)",
-                annotation_text=ev["event_name"][:28],
-                annotation_textangle=-90,
-                annotation_font_size=9,
-            )
-        return fig
 
     # Baltic Dry Index
     fig_bdi = go.Figure()
@@ -468,7 +450,6 @@ elif page == "Shipping Markets":
         name="BDI", line=dict(color="#1f77b4", width=1.5), fill="tozeroy",
         fillcolor="rgba(31,119,180,0.08)",
     ))
-    fig_bdi = add_event_lines(fig_bdi)
     fig_bdi.update_layout(
         title="Baltic Dry Index (2000–2024)",
         xaxis_title="", yaxis_title="BDI Points",
@@ -483,7 +464,6 @@ elif page == "Shipping Markets":
         name="Container Rate", line=dict(color="#ff7f0e", width=1.5), fill="tozeroy",
         fillcolor="rgba(255,127,14,0.08)",
     ))
-    fig_cont = add_event_lines(fig_cont)
     fig_cont.update_layout(
         title="Container Spot Rate — USD per 40ft (2000–2024)",
         xaxis_title="", yaxis_title="USD / 40ft",
