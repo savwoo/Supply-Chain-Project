@@ -33,7 +33,7 @@ def ensure_models() -> None:
 
 ensure_models()
 
-# ── Page config ───────────────────────────────────────────────────────────────
+# Page config 
 st.set_page_config(
     page_title="Supply Chain Risk Monitor",
     page_icon="🚢",
@@ -50,7 +50,7 @@ SEVERITY_COLORS = {
     "Extreme": "#D32F2F",
 }
 
-# ── Cached loaders ────────────────────────────────────────────────────────────
+# Cached loaders 
 @st.cache_data
 def get_events() -> pd.DataFrame:
     return load_disruption_events()
@@ -71,7 +71,7 @@ def get_rates() -> pd.DataFrame:
     return load_shipping_rates()
 
 
-# ── Sidebar ───────────────────────────────────────────────────────────────────
+# Sidebar
 st.sidebar.title("🚢 SC Risk Monitor")
 page = st.sidebar.radio(
     "Navigate",
@@ -87,9 +87,9 @@ st.sidebar.markdown("---")
 st.sidebar.caption("Data coverage: 2000–2025 · 58 disruption events · 10 industries · 14 major ports")
 
 
-# ══════════════════════════════════════════════════════════════════════════════
+
 # RISK PREDICTOR
-# ══════════════════════════════════════════════════════════════════════════════
+
 if page == "Risk Predictor":
     st.title("🔮 Disruption Risk Predictor")
     st.markdown(
@@ -205,9 +205,9 @@ if page == "Risk Predictor":
             )
 
 
-# ══════════════════════════════════════════════════════════════════════════════
+
 # DISRUPTION HISTORY
-# ══════════════════════════════════════════════════════════════════════════════
+
 elif page == "Disruption History":
     st.title("📋 Disruption History (2001–2025)")
     events = get_events()
@@ -323,9 +323,9 @@ elif page == "Disruption History":
     )
 
 
-# ══════════════════════════════════════════════════════════════════════════════
+
 # INDUSTRY VULNERABILITY
-# ══════════════════════════════════════════════════════════════════════════════
+
 elif page == "Industry Vulnerability":
     st.title("🏭 Industry Vulnerability Analysis")
     industry = get_industry()
@@ -436,9 +436,9 @@ elif page == "Industry Vulnerability":
         st.plotly_chart(fig_hhi, use_container_width=True)
 
 
-# ══════════════════════════════════════════════════════════════════════════════
+
 # SHIPPING MARKETS
-# ══════════════════════════════════════════════════════════════════════════════
+
 elif page == "Shipping Markets":
     st.title("📈 Shipping Market Indicators (2000–2024)")
     rates = get_rates()
@@ -534,9 +534,9 @@ elif page == "Shipping Markets":
     c4.metric("Latest Container Rate", f"${rates['container_rate_usd_40ft'].iloc[-1]:,.0f}")
 
 
-# ══════════════════════════════════════════════════════════════════════════════
+
 # PORT CONGESTION
-# ══════════════════════════════════════════════════════════════════════════════
+
 elif page == "Port Congestion":
     st.title("🚢 Port Congestion Monitor (2019–present)")
     ports = get_ports()
